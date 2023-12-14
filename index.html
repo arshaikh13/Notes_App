@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="write.css">
+    <script src="jquery-3.7.1.js"></script>
+    <script src="notes.js"></script>
+</head>
+<body>
+    <header>
+        <h2>QuickNote Pro</h2>
+    </header>
+
+    <div id="wrapper2">
+
+        <div id="createNote">
+            <h3>Create Note</h3>
+
+            <br>
+
+            <label for="createNoteNum">Note Number</label>
+            
+            <input 
+            type="text"
+            id="createNoteNum"  
+            name="noteNumber"
+            value="1"
+            maxlength="2"
+            size="2"
+            >
+
+            <br>
+
+            <textarea
+              id="noteText"
+              name="note_Text"
+              rows="4"
+              cols="40"
+            >
+        </textarea>
+
+        <button id="addNoteBeforeButton">Add Note Before</button>
+
+        <br>
+
+        <button id="addNoteAfterButton">Add Note After</button>
+
+        </div>
+
+        <div id="deleteNote">
+            <h3>Delete Note</h3>
+
+            <br>
+
+            <label for="noteNum">Note Number</label>
+            
+            <input 
+            type="text"
+            id="deleteNoteNum"
+            name="noteNumber"
+            value="1"
+            maxlength="2"
+            size="2"
+            >   
+
+            <button id="tempDeleteButton">Quick Remove</button>
+
+            <br>
+
+            <button id="restoreButton">Restore Note</button>
+
+            <br>
+
+            <button id="permDeleteButton">Delete Note</button>
+
+            <br>
+
+            <button id="clearAll">Clear Board</button>
+
+        </div>
+
+        <div id="styleNote">
+            <h3>Style Note</h3>
+
+            <br>
+
+            <label for="noteNum">Note Number</label>
+            
+            <input 
+            type="text"
+            id="styleNoteNum"
+            name="noteNumber"
+            value="1"
+            maxlength="2"
+            size="2"
+            >
+
+            <button id="markNote">Mark Note as Important</button>
+
+            <br>
+
+            <button id="unMarkNote">Unmark Note</button>
+
+            <br>
+
+            <button id="animate">Pulse Animation</button>
+
+        </div>
+
+    </div>
+    
+
+    <div id="wrapper1">
+        <h2>Notes Board</h2>
+        
+        <br>
+
+        <div id="displayBoard">
+
+        </div>
+    </div>
+    
+
+</body>
+</html>
